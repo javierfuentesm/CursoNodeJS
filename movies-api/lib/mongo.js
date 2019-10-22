@@ -5,12 +5,14 @@ const USER = encodeURIComponent(config.dbUser);
 const PASSWORD = encodeURIComponent(config.dbPassword);
 const DB_NAME = config.dbName;
 
-const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`;
-//const MONGO_URI = 'mongodb+srv://db_user_platzivideo:n0m3l0s3@cluster0-df9cm.mongodb.net/test?retryWrites=true&w=majority'
-//const MONGO_URI = `${config.dbConnectionType}://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}`;
+// const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`;
+const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}/${DB_NAME}?retryWrites=true&w=majority`;
+// const MONGO_URI = 'mongodb+srv://db_user_platzivideo:n0m3l0s3@cluster0-df9cm.mongodb.net/test?retryWrites=true&w=majority'
+// const MONGO_URI = `${config.dbConnectionType}://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}`;
 
 class MongoLib {
   constructor() {
+    console.log(MONGO_URI); // eslint-disable-line no-console
     this.client = new MongoClient(MONGO_URI, { useNewUrlParser: true });
     this.dbName = DB_NAME;
   }
