@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const { config } = require('./config/index');
 const moviesApi = require('./routes/movies.js');
@@ -11,6 +12,8 @@ const moviesApi = require('./routes/movies.js');
 //     leapyear(req.params.year2) ? 'El año es bisiesto' : 'El año no es bisiesto'
 //   );
 // });
+
+app.use(express.json());
 
 moviesApi(app);
 
