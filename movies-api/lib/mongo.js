@@ -6,7 +6,7 @@ const PASSWORD = encodeURIComponent(config.dbPassword);
 const DB_NAME = config.dbName;
 
 const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${DB_NAME}?retryWrites=true&w=majority`;
-//const MONGO_URI = 'mongodb+srv://db_user_platzivideo:n0m3l0s3@cluster0-df9cm.mongodb.net/test?retryWrites=true&w=majority'
+//const MONGO_URI = 'mongodb+srv://db_user_platzivideo:n0m3l0s3@cluster0-df9cm.mongodb.net/platzivideo_db?retryWrites=true&w=majority'
 //const MONGO_URI = `${config.dbConnectionType}://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}`;
 
 class MongoLib {

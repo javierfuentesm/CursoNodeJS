@@ -1,7 +1,7 @@
 const MongoLib = require('../lib/mongo');
 class MoviesService {
   constructor() {
-    this.colection = 'movies';
+    this.collection = 'movies';
     this.mongoDB = new MongoLib();
   }
   async getMovies({ tags }) {
