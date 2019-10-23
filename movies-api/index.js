@@ -11,7 +11,8 @@ const moviesApi = require('./routes/movies.js');
 //     leapyear(req.params.year2) ? 'El año es bisiesto' : 'El año no es bisiesto'
 //   );
 // });
-
+//body parser
+app.use(express.json());
 moviesApi(app);
 
 app.listen(config.port, () => {
