@@ -1,4 +1,6 @@
 const express = require('express');
+const slash  = require('express-slash');
+
 const app = express();
 const { config } = require('./config/index');
 const notFoundHandler = require('./utils/middleware/notFoundHandler');
@@ -18,9 +20,19 @@ const moviesApi = require('./routes/movies.js');
 //     leapyear(req.params.year2) ? 'El año es bisiesto' : 'El año no es bisiesto'
 //   );
 // });
+
+app.enable('strict routing');
+
 //body parser
 app.use(express.json());
+// Create the router using the same routing options as the app.
+var router = express.Router({
+  caseSensitive: app.get('case sensitive routing'),
+  strict       : app.get('strict routing')
+});
 
+app.use(router);
+app.use(slash());
 //routes
 moviesApi(app);
 
