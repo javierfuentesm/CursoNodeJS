@@ -6,7 +6,7 @@ class MoviesService {
   }
   async getMovies({ tags }) {
     const query = tags && { tags: { $in: tags } };
-    throw new Error('Error getting movies');
+    // throw new Error('Error getting movies');
     const movies = await this.mongoDB.getAll(this.collection, query); //eslint-disable-line
     return movies || [];
   }
