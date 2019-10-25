@@ -43,7 +43,7 @@ function moviesApi(app) {
   );
   router.post(
     '/',
-    validationHandler({ createMovieSchema }),
+    validationHandler(createMovieSchema),
     async (req, res, next) => {
       const { body: movie } = req;
       try {
