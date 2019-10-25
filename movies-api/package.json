@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/boom": "^8.0.1",
+    "@hapi/joi": "^16.1.7",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongodb": "^3.3.3"
@@ -24,9 +26,7 @@
     "prettier": "^1.18.2"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
