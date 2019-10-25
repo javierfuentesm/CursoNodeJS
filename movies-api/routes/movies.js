@@ -43,7 +43,7 @@ function moviesApi(app) {
   );
   router.post(
     '/',
-    validationHandler({ createMovieSchema }),
+    validationHandler( createMovieSchema),
     async (req, res, next) => {
       const { body: movie } = req;
       try {
@@ -60,7 +60,7 @@ function moviesApi(app) {
   router.put(
     '/:movieId',
     validationHandler({ movieId: movieIdSchema }, 'params'),
-    validationHandler({ updateMovieSchema }),
+    validationHandler( updateMovieSchema),
     async (req, res, next) => {
       const { body: movie } = req;
       const { movieId } = req.params;
@@ -99,7 +99,7 @@ function moviesApi(app) {
   router.patch(
     '/:movieId',
     validationHandler({ movieId: movieIdSchema }, 'params'),
-    validationHandler({ updateMovieSchema }),
+    validationHandler( updateMovieSchema),
     async (req, res, next) => {
       const { body: movie } = req;
       const { movieId } = req.params;
