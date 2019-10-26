@@ -1,0 +1,18 @@
+{
+  "uuid": "f2f12c17-563f-448e-baab-854db3067e0b",
+  "parent": null,
+  "pid": 2436,
+  "argv": [
+    "/usr/local/Cellar/node/12.10.0/bin/node",
+    "/usr/local/bin/npm",
+    "run",
+    "test"
+  ],
+  "execArgv": [],
+  "cwd": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api",
+  "time": 1572064363579,
+  "ppid": 2430,
+  "root": "2a0d6069-f51c-42d7-9a8c-f76035bc7719",
+  "coverageFilename": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/.nyc_output/f2f12c17-563f-448e-baab-854db3067e0b.json",
+  "files": []
+}

@@ -1,0 +1,31 @@
+{
+  "uuid": "bc09d44c-9ac0-4376-89b2-d9f0ee696e08",
+  "parent": null,
+  "pid": "2430",
+  "argv": [
+    "/usr/local/Cellar/node/12.10.0/bin/node",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/node_modules/.bin/nyc",
+    "npm",
+    "run",
+    "test"
+  ],
+  "execArgv": [],
+  "cwd": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api",
+  "time": 1572064362562,
+  "ppid": null,
+  "root": null,
+  "coverageFilename": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/.nyc_output/bc09d44c-9ac0-4376-89b2-d9f0ee696e08.json",
+  "files": [
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/lib/mongo.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/routes/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/services/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/buildMessage.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/errorHandlers.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/notFoundHandler.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/validationHandlers.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/mongoLib.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/schemas/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/testServer.js"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "uuid": "5c066122-29f2-4f34-8679-28c713ec88f9",
+  "parent": "f2f12c17-563f-448e-baab-854db3067e0b",
+  "pid": 2438,
+  "argv": [
+    "/usr/local/Cellar/node/12.10.0/bin/node",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/node_modules/.bin/mocha",
+    "--exit"
+  ],
+  "execArgv": [],
+  "cwd": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api",
+  "time": 1572064364239,
+  "ppid": 2436,
+  "root": "2a0d6069-f51c-42d7-9a8c-f76035bc7719",
+  "coverageFilename": "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/.nyc_output/5c066122-29f2-4f34-8679-28c713ec88f9.json",
+  "files": [
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/testServer.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/routes/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/services/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/lib/mongo.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/schemas/movies.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/validationHandlers.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/mongoLib.js",
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/buildMessage.js"
+  ]
+}

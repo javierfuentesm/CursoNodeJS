@@ -1,0 +1,58 @@
+{
+  "processes": {
+    "5c066122-29f2-4f34-8679-28c713ec88f9": {
+      "parent": "f2f12c17-563f-448e-baab-854db3067e0b",
+      "children": []
+    },
+    "bc09d44c-9ac0-4376-89b2-d9f0ee696e08": { "parent": null, "children": [] },
+    "f2f12c17-563f-448e-baab-854db3067e0b": {
+      "parent": null,
+      "children": ["5c066122-29f2-4f34-8679-28c713ec88f9"]
+    }
+  },
+  "files": {
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/movies.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/testServer.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/routes/movies.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/services/movies.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/lib/mongo.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/schemas/movies.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/validationHandlers.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/mocks/mongoLib.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/buildMessage.js": [
+      "5c066122-29f2-4f34-8679-28c713ec88f9",
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/errorHandlers.js": [
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ],
+    "/Users/fuentesrj/OneDrive - Instituto Politecnico Nacional/Escuela de Javascript/Backend con NodeJS/movies-api/utils/middleware/notFoundHandler.js": [
+      "bc09d44c-9ac0-4376-89b2-d9f0ee696e08"
+    ]
+  },
+  "externalIds": {}
+}
