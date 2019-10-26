@@ -1,12 +1,12 @@
 const assert = require('assert');
 const proxyquire = require('proxyquire');
 
-const { moviesMock, MoviesServiceMock } = require('../utils/mocks/movies.js');
+const { moviesMock, MovieServiceMock } = require('../utils/mocks/movies.js');
 const testServer = require('../utils/testServer');
 
 describe('routes - movies', function() {
   const route = proxyquire('../routes/movies', {
-    '../services/movies': MoviesServiceMock
+    '../services/movies': MovieServiceMock
   });
 
   const request = testServer(route);
@@ -19,7 +19,7 @@ describe('routes - movies', function() {
       request.get('/api/movies').end((err, res) => {
         assert.deepEqual(res.body, {
           data: moviesMock,
-          message: 'movies listed'
+          message: 'Movies listed'
         });
 
         done();
