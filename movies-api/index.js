@@ -1,16 +1,17 @@
 const express = require('express');
-const slash  = require('express-slash');
+const slash = require('express-slash');
 
 const app = express();
 const { config } = require('./config/index');
 const notFoundHandler = require('./utils/middleware/notFoundHandler');
+const moviesApi = require('./routes/movies.js');
+const userMoviesApi = require('./routes/userMovies');
+
 const {
   logErrors,
   wrapErrors,
   errorHandler
 } = require('./utils/middleware/errorHandlers');
-
-const moviesApi = require('./routes/movies.js');
 
 // app.get('/year/:year2', (req, res) => {
 //   const leapyear = year => {
@@ -28,13 +29,14 @@ app.use(express.json());
 // Create the router using the same routing options as the app.
 var router = express.Router({
   caseSensitive: app.get('case sensitive routing'),
-  strict       : app.get('strict routing')
+  strict: app.get('strict routing')
 });
 
 app.use(router);
 app.use(slash());
 //routes
 moviesApi(app);
+userMoviesApi(app);
 
 //Catch 404
 app.use(notFoundHandler);
