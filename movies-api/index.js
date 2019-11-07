@@ -4,6 +4,7 @@ const slash = require('express-slash');
 const app = express();
 const { config } = require('./config/index');
 const notFoundHandler = require('./utils/middleware/notFoundHandler');
+const authApi = require('./routes/auth.js');
 const moviesApi = require('./routes/movies.js');
 const userMoviesApi = require('./routes/userMovies');
 
@@ -35,6 +36,7 @@ var router = express.Router({
 app.use(router);
 app.use(slash());
 //routes
+authApi(app);
 moviesApi(app);
 userMoviesApi(app);
 
