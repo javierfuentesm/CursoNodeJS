@@ -112,7 +112,7 @@ app.get(
   })
 );
 app.get(
-  "/auth/google-oauth",
+  "/auth/google-oauth/callback",
   passport.authenticate("google-oauth", { session: false }),
   (req, res, next) => {
     if (!req.user) {
