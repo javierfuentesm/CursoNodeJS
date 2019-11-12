@@ -35,7 +35,7 @@ const userMoviesAPI = app => {
   router.post(
     '/',
     passport.authenticate('jwt', { session: false }),
-    scopesValidationHandler(['read:create-movies']),
+    scopesValidationHandler(['create:user-movies']),
 
     validationHandlers(createUserMovieSchema),
     async (req, res, next) => {
@@ -63,7 +63,7 @@ const userMoviesAPI = app => {
     async (req, res, next) => {
       const { userMovieId } = req.params;
       try {
-        const deletedUserMovieId = await UserMoviesService.deletedUserMovieId({
+        const deletedUserMovieId = await userMoviesService.deleteUserMovie({
           userMovieId
         });
 
