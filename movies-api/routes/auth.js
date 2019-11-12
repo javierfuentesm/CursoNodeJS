@@ -3,6 +3,9 @@ const passport = require('passport');
 const boom = require('@hapi/boom');
 const jwt = require('jsonwebtoken');
 const ApiKeysService = require('../services/apiKeys');
+const UserService = require('../services/user');
+const validationHandler = require('../utils/middleware/validationHandlers');
+const { createUserSchema } = require('../utils/schemas/users');
 const { config } = require('../config');
 
 //Basic strategy
@@ -13,6 +16,7 @@ const authApi = app => {
   const router = express.Router();
   app.use('/api/auth', router);
   const apiKeysService = new ApiKeysService();
+  const userService = new UserService();
   router.post('/sign-in', async (req, res, next) => {
     const { apiKeyToken } = req.body;
     if (!apiKeyToken) {
@@ -48,5 +52,22 @@ const authApi = app => {
       }
     })(req, res, next);
   });
+
+  router.post(
+    '/sign-up',
+    validationHandler(createUserSchema),
+    async (req, res, next) => {
+      const { body: user } = req;
+      try {
+        const createdUserId = await userService.createUser({ user });
+        res.status(201).json({
+          data: createdUserId,
+          message: 'user created'
+        });
+      } catch (error) {
+        next(error);
+      }
+    }
+  );
 };
 module.exports = authApi;
